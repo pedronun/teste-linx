@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+
+  margin-top: 107px;
+}
+
+.content {
+  width: 1080px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  div {
+    width: 700px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 19px;
+    color: #414141;
+  }
+
+  p + p {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  .content {
+    width: 344px;
+
+    flex-direction: column;
+
+    div {
+      width: 309px;
+    }
+
+    p {
+      text-align: center;
+
+      &:first-child {
+        margin-top: 40px;
+      }
+    }
+  }
+}
